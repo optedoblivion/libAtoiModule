@@ -17,7 +17,7 @@ static PyObject *py_stringToInteger(PyObject *self, PyObject *args){
     PyArg_ParseTuple(args, "s", &string);
 
     // Do work for conversion
-    for (i=0;i<sizeof(string);i++){
+    for (i=0;i<strlen(string);i++){
         c = string[i];
         if (c >= '0' && c <= '9'){
             digit = (int) (c - '0');
