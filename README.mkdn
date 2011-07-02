@@ -1,0 +1,9 @@
+This is a simple lib for converting a string to an integer and desregards all other symbols and characters in the string.
+
+To make the .so type
+
+    make
+
+then try to run the test file
+
+    python test.py
